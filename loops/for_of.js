@@ -5,6 +5,10 @@ legend:
     variable = sometemp word you use to refer to the current item
     collection = some collection you want to go through ex...Array or Obj or String
 
+
+// Of requires that your 'thing' you're looping through be iterable--that means it needs to be numbered
+// Of gives back the value of the thing, while In givews back the keys instead of their values
+
 NOTE: This is better usually for arrays and strings if you want the items
 
 <keyword>(<var> of <collection>){

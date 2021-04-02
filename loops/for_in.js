@@ -5,6 +5,9 @@ legend:
     variable = sometemp word you use to refer to the current item
     collection = some collection you want to go through ex...Array or Obj or String 
 
+
+// In does not require that the thing you loop through be numbered
+
 <keyword>(<variable> in <collection>){
     // Do something
 }
@@ -16,7 +19,7 @@ let person = {
 // A look ahead
 //console.log(person.name)
 //console.log(person["name"])
-
+/*
 for(let property in person){
     //console.log(property)
     console.log(person[property]) // A good use of a for in loop
@@ -35,7 +38,7 @@ for (let letterId in fullName){
     //console.log(letterId)
     console.log(fullName[letterId])
 }
-
+*/
 /*
 This does the same thing!
 for(let i = 0; i < fullName.length; i++){
@@ -43,3 +46,15 @@ for(let i = 0; i < fullName.length; i++){
 }
 
 */
+
+let instructor = 'pAuL';
+let capName;
+
+for (n in instructor){
+    if (n == 0){
+        capName = instructor[n].toUpperCase();
+    } else {
+        capName += instructor[n].toLowerCase();
+    }
+}
+console.log(capName);

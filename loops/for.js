@@ -1,5 +1,19 @@
 // For loop
 /*
+Loops offer a quick and easy way to do something repeatedly
+
+There are many different kinds of loops but they all do roughly the same thing:
+    For statement
+    do while
+    while
+    labeled
+    break
+    continue
+    for in
+    for of
+    .forEach --> Arrays only
+    .map   ----> Arrays only
+
 legend:
     keyword = "for"
     1 = a variable to keep track of "iteration" and it's start value
@@ -14,6 +28,11 @@ ex: for(let i = 0; i <= 10; i = i + 1){
     console.log(i)
 }
 */
+
+// Count to 10 from 0 and log the numbers
+// for(let i = 0; i <= 10; i++){
+//     console.log(i);
+// }
 
 for(let x = 0; x < 20; x++){ // x++ is the same as x = x + 1
     if(x % 2 == 0){
